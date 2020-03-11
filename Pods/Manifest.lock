@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Bond (7.2.1):
+    - Differ (~> 1.3)
+    - ReactiveKit (~> 3.9)
+  - Differ (1.3.0)
+  - ObjectMapper (3.5.1)
+  - ReactiveKit (3.9.7)
+
+DEPENDENCIES:
+  - Alamofire
+  - Bond
+  - Differ
+  - ObjectMapper
+  - ReactiveKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Bond
+    - Differ
+    - ObjectMapper
+    - ReactiveKit
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Bond: 663dd8da3eccadb4d7d57243499d387f9976580d
+  Differ: 9fcee7602542d7c6484ce05a0faec1c11258ed63
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  ReactiveKit: 5f4c440715d671901c382ae6b42ed3337ce4699b
+
+PODFILE CHECKSUM: 89530c2a51c995d2af2844a843afc5daf776013c
+
+COCOAPODS: 1.9.0
