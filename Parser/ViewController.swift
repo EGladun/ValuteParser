@@ -17,17 +17,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
-        activityIndicator.center = self.view.center
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.style = UIActivityIndicatorView.Style.gray
-        view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
+        self.startAnim()
         viewModel.doRequest{
-            print("that's all")
             self.rates = self.viewModel.arrayOfMoney
             self.tableView?.reloadData()
-            self.activityIndicator.stopAnimating()
+            self.stopAnim()
         }
     }
     
@@ -37,6 +31,18 @@ class ViewController: UIViewController {
     
     let identifier = "MoneyTableViewCell"
     let viewModel = ViewModel()
+    
+    func startAnim(){
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        view.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
+    }
+    
+    func stopAnim(){
+        self.activityIndicator.stopAnimating()
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
@@ -81,7 +87,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
     //press method
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Pressed at \(indexPath.row)")
+        print("Pressed at \(indexPath.section) \(indexPath.row)")
     }
 }
 

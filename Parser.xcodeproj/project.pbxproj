@@ -9,19 +9,17 @@
 /* Begin PBXBuildFile section */
 		743E3D9A2418ECAF00D86DDE /* MoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743E3D982418ECAF00D86DDE /* MoneyTableViewCell.swift */; };
 		743E3D9B2418ECAF00D86DDE /* MoneyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 743E3D992418ECAF00D86DDE /* MoneyTableViewCell.xib */; };
-		7460DB1A241911FE000BDEC7 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460DB19241911FE000BDEC7 /* JSON.swift */; };
 		7460DB1C24191217000BDEC7 /* Bpi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460DB1B24191217000BDEC7 /* Bpi.swift */; };
 		7460DB202419156C000BDEC7 /* HeaderForTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460DB1F2419156C000BDEC7 /* HeaderForTableView.swift */; };
 		7460DB2224191577000BDEC7 /* HeaderForTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7460DB2124191577000BDEC7 /* HeaderForTableView.xib */; };
 		74A017302419218900131DA0 /* JsonTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0172F2419218900131DA0 /* JsonTime.swift */; };
+		74C95FE9241A0F2D00E735BA /* TakenJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C95FE8241A0F2D00E735BA /* TakenJson.swift */; };
 		74F056D92417D42200315F0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F056D82417D42200315F0E /* AppDelegate.swift */; };
 		74F056DB2417D42200315F0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F056DA2417D42200315F0E /* ViewController.swift */; };
 		74F056DE2417D42200315F0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F056DC2417D42200315F0E /* Main.storyboard */; };
 		74F056E02417D42400315F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F056DF2417D42400315F0E /* Assets.xcassets */; };
 		74F056E32417D42400315F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F056E12417D42400315F0E /* LaunchScreen.storyboard */; };
 		74F056EB2417D4BF00315F0E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F056EA2417D4BF00315F0E /* ViewModel.swift */; };
-		74F056EE2417D4FF00315F0E /* TakenJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F056ED2417D4FF00315F0E /* TakenJSON.swift */; };
-		74F056F02417D50A00315F0E /* Valute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F056EF2417D50A00315F0E /* Valute.swift */; };
 		92201A1990B4C30999BF5A85 /* Pods_Parser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF44F80C4323C4BE9AA189E /* Pods_Parser.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,11 +27,11 @@
 		2F77129C791F9B0328B8C272 /* Pods-Parser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parser.release.xcconfig"; path = "Target Support Files/Pods-Parser/Pods-Parser.release.xcconfig"; sourceTree = "<group>"; };
 		743E3D982418ECAF00D86DDE /* MoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTableViewCell.swift; sourceTree = "<group>"; };
 		743E3D992418ECAF00D86DDE /* MoneyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyTableViewCell.xib; sourceTree = "<group>"; };
-		7460DB19241911FE000BDEC7 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		7460DB1B24191217000BDEC7 /* Bpi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bpi.swift; sourceTree = "<group>"; };
 		7460DB1F2419156C000BDEC7 /* HeaderForTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderForTableView.swift; sourceTree = "<group>"; };
 		7460DB2124191577000BDEC7 /* HeaderForTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderForTableView.xib; sourceTree = "<group>"; };
 		74A0172F2419218900131DA0 /* JsonTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTime.swift; sourceTree = "<group>"; };
+		74C95FE8241A0F2D00E735BA /* TakenJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakenJson.swift; sourceTree = "<group>"; };
 		74F056D52417D42200315F0E /* Parser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F056D82417D42200315F0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F056DA2417D42200315F0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +40,6 @@
 		74F056E22417D42400315F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74F056E42417D42400315F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74F056EA2417D4BF00315F0E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		74F056ED2417D4FF00315F0E /* TakenJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakenJSON.swift; sourceTree = "<group>"; };
-		74F056EF2417D50A00315F0E /* Valute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valute.swift; sourceTree = "<group>"; };
 		949F92E2186213CEFD13BB39 /* Pods-Parser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parser.debug.xcconfig"; path = "Target Support Files/Pods-Parser/Pods-Parser.debug.xcconfig"; sourceTree = "<group>"; };
 		BFF44F80C4323C4BE9AA189E /* Pods_Parser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,11 +94,9 @@
 		74F056EC2417D4E400315F0E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				74F056ED2417D4FF00315F0E /* TakenJSON.swift */,
-				74F056EF2417D50A00315F0E /* Valute.swift */,
-				7460DB19241911FE000BDEC7 /* JSON.swift */,
 				7460DB1B24191217000BDEC7 /* Bpi.swift */,
 				74A0172F2419218900131DA0 /* JsonTime.swift */,
+				74C95FE8241A0F2D00E735BA /* TakenJson.swift */,
 				7460DB1F2419156C000BDEC7 /* HeaderForTableView.swift */,
 				7460DB2124191577000BDEC7 /* HeaderForTableView.xib */,
 			);
@@ -246,13 +240,11 @@
 				74A017302419218900131DA0 /* JsonTime.swift in Sources */,
 				7460DB202419156C000BDEC7 /* HeaderForTableView.swift in Sources */,
 				74F056DB2417D42200315F0E /* ViewController.swift in Sources */,
-				7460DB1A241911FE000BDEC7 /* JSON.swift in Sources */,
 				74F056EB2417D4BF00315F0E /* ViewModel.swift in Sources */,
 				74F056D92417D42200315F0E /* AppDelegate.swift in Sources */,
-				74F056EE2417D4FF00315F0E /* TakenJSON.swift in Sources */,
 				743E3D9A2418ECAF00D86DDE /* MoneyTableViewCell.swift in Sources */,
-				74F056F02417D50A00315F0E /* Valute.swift in Sources */,
 				7460DB1C24191217000BDEC7 /* Bpi.swift in Sources */,
+				74C95FE9241A0F2D00E735BA /* TakenJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

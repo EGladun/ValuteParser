@@ -7,9 +7,20 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class JsonTime: Decodable{
-    var updated: String!
-    var updatedISO: String!
-    var updateduk: String!
+class JsonTime: Mappable{
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        updated <- map["updated"]
+        updatedISO <- map["updatedISO"]
+        updateduk <- map["updateduk"]
+    }
+    
+    var updated: String?
+    var updatedISO: String?
+    var updateduk: String?
 }

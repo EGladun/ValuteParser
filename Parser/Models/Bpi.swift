@@ -7,11 +7,24 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class Bpi: Decodable{
-    var code: String!
-    var symbol: String!
-    var rate: String!
-    var description: String!
-    var rate_float: Float!
+class Bpi: Mappable{
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        code <- map["code"]
+        symbol <- map["symbol"]
+        rate <- map["rate"]
+        description <- map["description"]
+        rate_float <- map["rate_float"]
+    }
+    
+    var code: String?
+    var symbol: String?
+    var rate: String?
+    var description: String?
+    var rate_float: NSNumber?
 }

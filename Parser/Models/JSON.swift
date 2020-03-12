@@ -7,10 +7,22 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class JSON: Decodable{
-    var time: JsonTime!
-    var disclaimer: String!
-    var chartName: String!
+class JSON: Mappable{
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        time <- map["time"]
+        disclaimer <- map["disclaimer"]
+        chartName <- map["chartname"]
+        bpi <- map["bpi"]
+    }
+    
+    var time: JsonTime?
+    var disclaimer: String?
+    var chartName: String?
     var bpi: [Bpi]?
 }

@@ -10,6 +10,7 @@ target 'Parser' do
 	pod 'ReactiveKit'
   	pod 'Bond'
 	pod 'ObjectMapper'
+	pod 'AlamofireObjectMapper'
   # Pods for testApp
 
 end

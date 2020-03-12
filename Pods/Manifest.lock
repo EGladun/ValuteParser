@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.7.2)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
   - Bond (7.2.1):
     - Differ (~> 1.3)
     - ReactiveKit (~> 3.9)
@@ -9,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireObjectMapper
   - Bond
   - Differ
   - ObjectMapper
@@ -17,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireObjectMapper
     - Bond
     - Differ
     - ObjectMapper
@@ -24,11 +29,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
   Bond: 663dd8da3eccadb4d7d57243499d387f9976580d
   Differ: 9fcee7602542d7c6484ce05a0faec1c11258ed63
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   ReactiveKit: 5f4c440715d671901c382ae6b42ed3337ce4699b
 
-PODFILE CHECKSUM: 89530c2a51c995d2af2844a843afc5daf776013c
+PODFILE CHECKSUM: 3939f1a453bd3a6a5f67799348ceb1eec5d6c0cd
 
 COCOAPODS: 1.9.0
